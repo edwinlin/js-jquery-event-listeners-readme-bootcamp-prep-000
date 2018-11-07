@@ -11,9 +11,17 @@ function frameIt(){
   })
 }
 
+function pressIt(){
+  $('input').on('keydown', function(e){
+    if(e.key === 'G'){
+      alert('G')
+    }
+  })
+}
 $(document).ready(function(){
 
 // call functions here
 getIt();
 frameIt();
+pressIt();
 });
